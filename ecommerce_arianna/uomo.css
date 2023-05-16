@@ -1,0 +1,102 @@
+
+body{
+    height: 20000px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    height: 100px;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    position: sticky;
+    background-color: #03abb7;
+   top: 0px;
+    grid-template-areas:
+      "Logo NavBar NavBar NavBar NavBar NavBar"
+      ". . . . . ."
+      ". . . . . .";
+      z-index: 1;
+  }
+  
+  .Logo {
+    grid-area: Logo;
+    width: 100px;
+    height: 100px;
+    background-color: #03abb7;
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+}
+
+
+  
+  .NavBar { 
+    grid-area: NavBar;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 80px;
+    margin-right: 20px;
+ }
+
+ .menu{list-style: none; font-size: 18px;}
+ .menu li{display: inline-block; color: #6303b7; padding: 0 0px;}
+ .menu li a{transition: all .3s ease; color: #6303b7; padding: 15px; display: block; text-decoration: none;}
+ .menu a:hover{color: white;}
+
+figure{
+    margin: 0;
+    height: 200px;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    color: #6303b7;
+}
+
+ .hot {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 200px;
+  }
+
+  .hot > div {
+    background-color: #f1f1f1;
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .titolo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 80px;
+}
+
+.articoli{
+  object-fit: cover;
+  border: 2px solid #03abb7;
+  width: 220PX;
+}
+
+.cont{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+figure > img{
+    height: 200px;
+}

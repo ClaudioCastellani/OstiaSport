@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* End Global rules */
+  
+  /* Start body rules */
+  body {
+  /*background-image: linear-gradient(-225deg, #a1a1a1 0%, #30e5f1 100%);*/
+  /*background-image: #30e5f1 100%;*/
+  background-image: linear-gradient(to top,#c5c5c5 0%, #03abb7 100%);
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  /*   the main font */
+    font-family: 'Abel', sans-serif;
+  opacity: .95;
+  /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+  }
+  
+  
+  
+  /* |||||||||||||||||||||||||||||||||||||||||||||*/
+  /* //////////////////////////////////////////// */
+  
+  
+  
+  
+  /* End body rules */
+  
+  /* Start form  attributes */
+  form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #eae8);
+  }
+  /* form Container */
+  form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+  }
+  
+  /* the header for the form */
+  header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  /* Login title for form */
+  header h2 {
+    font-size: 150%;
+    font-family: 'Geneve', sans-serif;
+    color: #3e403f;
+  }
+  /*  A welcome message or an explanation of the login form */
+  header p {letter-spacing: 0.05em;}
+  /* a legend to put on top of the input*/
+  legend {
+    font-size: 70%;
+    font-family: 'Geneve', sans-serif;
+    color: #4e504f;
+  }
+  
+  
+  
+  /* //////////////////////////////////////////// */
+  
+  
+  .input-item {
+    margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 99%;
+  }
+  
+  
+  
+  /* Show/hide password Font Icon */
+  #eye {
+    background: transparent;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -10px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: -1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+  }
+  #eye:hover {
+    color:#03abb7;
+  }
+  /* inputs form  */
+  input[class="form-input"]{
+    font-size: 16px;
+    outline: none;
+    width: calc(99% - 36px);
+    border: 2px solid #CCC;
+    padding: 16px;
+    padding-bottom: 5%;
+    border-radius: 2px;
+    transition: 0.2s linear;
+    
+  }
+  input[id="txt-input"] {width: calc(99% - 36px);}
+  /* focus  */
+  input:focus {
+    transform: translateX(-2px);
+    border: 2px solid #03abb7;
+    /*border-radius: 5px;*/
+  }
+  input:hover {
+    border: 2px solid #2dd1dd;
+  }
+  input:active {
+    border: 2px solid #03abb7;
+  }
+  
+  input[class="form-check"]{
+    padding: 16px;
+    
+  }
+  label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  label input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    padding-top: 13px;
+    margin-right: 10px;
+    cursor: pointer;
+   }
+  
+  /* //////////////////////////////////////////// */
+  
+  /* input[type="text"] {min-width: 250px;} */
+  /* buttons  */
+  button { 
+    color: #272727;
+    display: inline-block, position left;
+    background: #03abb7;
+    width: 350px;
+    height: 50px;
+  
+    padding: 0 20px;
+    border-radius: 2px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+
+    margin-left: 21px;
+
+    
+  }
+  /* Submits */
+  .submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+  }
+  
+  /*       Forgot Password button FAF3DD  */
+  .frgt-pass {
+    width: 48%;
+    display: inline-block;
+    float: left;
+
+    margin-left: 2%;
+    
+    background: #03abb7;
+}
+    
+  
+  /*     Sign Up button  */
+  .sign-up {
+    width: 48%;
+    display: inline-block;
+    margin-left: 2%;
+    
+    background: #03abb7;
+}
+  
+  
+  /* buttons hover */
+  button:hover {
+    transform: translatey(3px);
+    box-shadow:none;
+  }
+  
+  /* buttons hover Animation */
+  button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+  }
+  @keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+  }

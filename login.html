@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
+    <title>LOGIN-Ostia</title>
+
+    <!-- CSS style-->
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/logStyle.css" rel="stylesheet" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <div class="container">
+        <div class="Logo">
+            <img src="images/logo.png" width="90px" align-items="center" alt="Logo" class="logo">
+        </div>
+        <nav class="NavBar">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li>|</li>
+                <li><a href="#">UOMO</a></li>
+                <li>|</li>
+                <li><a href="#">DONNA</a></li>
+                <li>|</li>
+                <li><a href="#">BAMBINI</a></li>
+                <li>|</li>
+                <li><a href="#">CHI SIAMO</a></li>
+                <li>|</li>
+                <li><div style="visibility: hidden;" id="logged-in">
+                    <p><strong>Ciao</strong>
+                    </p>
+                    <div id="logged-in-list"></div>
+                </div></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="visibility: hidden;" id="logged-in">
+        <p><strong>Logged in as:</strong>
+        </p>
+        <div id="logged-in-list"></div>
+    </div>
+
+    <div class="overlay">
+        
+        <form id="login-form" action="/schedaFausto" method="post">
+           <!--con = Container  for items in the form-->
+           <div class="con">
+           <!--Start  header Content-->
+           <header class="head-form">
+              <h2>Accedi</h2>
+              <h2>con username e password</h2>
+           </header>
+           <!--     End  header Content  -->
+           <div class="field-set">
+                <!--user name Input-->
+                 <input class="form-input" id="username" type="text" size="14" maxlenght="14" placeholder="Username" required>
+                 <!-- password, Password Input-->
+                 <input class="form-input" id="password" type="text" size="14" maxlength="14" placeholder="Password"  required>
+                 <!--Show/hide password  -->
+                    
+                    <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                    <p id="text">ATTENZIONE! Capslock attivo.</p>
+    
+                <div class="form-check">
+                    <label for="rememberme">
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    Ricordami
+                    </label>
+                </div>
+                <!--buttons -->
+                <!--      button LogIn -->
+              <button class="log-in" type="submit" value="Login">
+                
+                Accedi </button>
+             </div>
+             <!--   other buttons -->
+             <div class="other">
+                 <!--      Forgot Password button-->
+                 <button class="btn submits frgt-pass">Password dimenticata?</button>
+                 <!--Sign Up button -->
+                 <button class="btn submits sign-up">Iscriviti 
+                    <!--Sign Up font icon -->
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </button>
+                <!--      End Other the Division -->
+            </div>
+             <!--   End Container  -->
+            </div>
+          
+            <!-- End Form -->
+        </form>
+        </div>
+    
+        <!--js script-->
+        <script src="javaScript/CapsLockControl.js"></script>
+        <script src="javaScript/ShowPassword.js"></script>
+        <script src="javaScript/login.js"></script>
+</body>
+</html>

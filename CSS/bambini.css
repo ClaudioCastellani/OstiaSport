@@ -149,7 +149,10 @@ footer {
   padding: 0;
   margin: 0;
   display: flex;
+  transition: all .3s ease; color: #6303b7; display: block; text-decoration: none;
 }
+
+.footer-links ul a:hover{color: #03abb7;}
 
 .footer-social ul li {
   margin-right: 10px;

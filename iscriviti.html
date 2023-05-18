@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iscriviti</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- CSS style-->
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/iscrivitiStyle.css" rel="stylesheet"/>
+
+    <script src="jquery-3.7.0.js"></script>
+</head>
+<body>
+    <!-- navBar-->
+    <div class="container">
+        <div class="Logo">
+            <img src="img/logo.png" width="90px" align-items="center" alt="Logo" class="logo">
+        </div>
+        <nav class="NavBar">
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li>|</li>
+                <li><a href="donna.html">DONNA</a></li>
+                <li>|</li>
+                <li><a href="uomo.html">UOMO</a></li>
+                <li>|</li>
+                <li><a href="bambino.html">BAMBINO</a></li>
+                <li>|</li>
+                <li><a href="ChiSiamo.html">CHI SIAMO</a></li>
+                <li>|</li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- multistep form msform-->
+<form id="msform">
+    <!-- barra dei progressi -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Profili Social</li>
+      <li>Dettagli Personali</li>
+    </ul>
+    <!-- campi fs sta per fieldset-->
+    <fieldset>
+      <h2 class="fs-title">Crea il tuo account!</h2>
+      <h3 class="fs-subtitle">Il tuo primo passo 1</h3>
+      <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="pass" placeholder="Password" />
+      <input type="password" name="cpass" placeholder="Confirm Password" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Profili Social</h2>
+      <h3 class="fs-subtitle">i tuoi social</h3>
+      <input type="text" name="twitter" placeholder="Twitter" />
+      <input type="text" name="facebook" placeholder="Facebook" />
+      <input type="text" name="gplus" placeholder="Google Plus" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Dettagli Personali</h2>
+      <h3 class="fs-subtitle">I tuoi dati non saranno venduti</h3>
+      <input type="text" name="fname" placeholder="First Name" />
+      <input type="text" name="lname" placeholder="Last Name" />
+      <input type="text" name="phone" placeholder="Phone" />
+      <textarea name="address" placeholder="Address"></textarea>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <a href="#" class="submit action-button" target="_top">Submit</a>
+    </fieldset>
+  </form>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="Ostia Sport Logo">
+            <h1>Ostia Sport</h1>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="donna.html">Donna</a></li>
+              <li><a href="uomo.html">Uomo</a></li>
+              <li><a href="bambino.html">Bambino</a></li>
+              <li><a href="ChiSiamo.html">Chi siamo</a></li>
+            </ul>
+
+            <div>
+              <p>Email: ostiasportsupport@gmail.com</p>
+              <p>P.IVA: 53968103395</p>
+              <p></p>
+            </div>
+
+          </div>
+          <div class="footer-social">
+            <h4>Seguici su:</h4>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Ostia Sport. Tutti i diritti riservati.</p>
+        </div>
+      </footer>
+
+
+
+
+
+      <script src="Javascript/script.js"></script>
+      <script src="javaScript/Iscriviti.js"></script>
+</body>
+</html>

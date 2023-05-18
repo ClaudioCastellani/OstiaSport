@@ -14,9 +14,9 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  font-family: 'Oswald', sans-serif;
   /*   the main font */
-    font-family: 'Abel', sans-serif;
+    /*font-family: 'Abel', sans-serif;*/
   opacity: .95;
   /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
   }
@@ -66,7 +66,7 @@
   /* Login title for form */
   header h2 {
     font-size: 150%;
-    font-family: 'Geneve', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #3e403f;
   }
   /*  A welcome message or an explanation of the login form */
@@ -74,7 +74,7 @@
   /* a legend to put on top of the input*/
   legend {
     font-size: 70%;
-    font-family: 'Geneve', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #4e504f;
   }
   

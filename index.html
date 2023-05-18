@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="style.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" >
     <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Homepage</title>
   </head>
   <body>
     <div class="container">
         <div class="Logo">
-            <img src="images/logo.png" width="90px" align-items="center" alt="Logo" class="logo">
+            <img src="img/logo.png" width="90px" align-items="center" alt="Logo" class="logo">
         </div>
         <nav class="NavBar">
             <ul class="menu">
-                <li><a href="#">UOMO</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li>|</li>
-                <li><a href="#">DONNA</a></li>
+                <li><a href="uomo.html">UOMO</a></li>
                 <li>|</li>
-                <li><a href="#">BAMBINI</a></li>
+                <li><a href="donna.html">DONNA</a></li>
                 <li>|</li>
-                <li><a href="#">CHI SIAMO</a></li>
+                <li><a href="bambini.html">BAMBINI</a></li>
                 <li>|</li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="ChiSiamo.html">CHI SIAMO</a></li>
+                <li>|</li>
+                <li><a href="login.html">LOGIN</a></li>
             </ul>
         </nav>
     </div>
@@ -33,21 +36,24 @@
       <body>
         <div class="carousel">
           <div class="carousel-inner">
-            <img class="carousel-image" src="images/sconto1.jpg" alt="Immagine 1">
-            <img class="carousel-image" src="images/sconto2.jpg" alt="Immagine 2">
-            <img class="carousel-image" src="images/sconto3.jpg" alt="Immagine 3">
+            <img class="carousel-image" src="img/sconto1.jpg" alt="Immagine 1">
+            <img class="carousel-image" src="img/sconto2.jpg" alt="Immagine 2">
+            <img class="carousel-image" src="img/sconto3.jpg" alt="Immagine 3">
           </div>
         </div>
 
         <h2 class="titolo">Articoli in evidenza</h2>
         <div class="hot">
 
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
-          <img class="articoli" src="images/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <figure>
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <figcaption>prezzo: </figcaption>
+        </figure>
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
+          <img class="articoli" src="img/217f60e5-8f95-404f-aab3-f1e6813d54c7.png" alt="canotta ostia">
 
         </div>
 
@@ -55,16 +61,16 @@
         <footer>
           <div class="footer-container">
             <div class="footer-logo">
-              <img src="images/logo.png" alt="Ostia Sport Logo">
+              <img src="img/logo.png" alt="Ostia Sport Logo">
               <h1>Ostia Sport</h1>
             </div>
             <div class="footer-links">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Uomo</a></li>
-                <li><a href="#">Donna</a></li>
-                <li><a href="#">Bambini</a></li>
-                <li><a href="#">Chi siamo</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uomo.html">Uomo</a></li>
+                <li><a href="donna.html">Donna</a></li>
+                <li><a href="bambini.html">Bambini</a></li>
+                <li><a href="ChiSiamo.html">Chi siamo</a></li>
               </ul>
 
               <div>
@@ -92,6 +98,6 @@
 
 
 
-        <script src="script.js"></script>
+        <script src="Javascript/script.js"></script>
   </body>
 </html>

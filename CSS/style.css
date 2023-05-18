@@ -11,7 +11,7 @@
       "Logo NavBar NavBar NavBar NavBar NavBar"
       ". . . . . ."
       ". . . . . .";
-      z-index: 1;
+      z-index: 5;
   }
   
   .Logo {
@@ -103,13 +103,13 @@
 
   .hot > img {
     background-color: #f1f1f1;
-    width: 220px;
+    width: 180px;
     height: 300px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-  }
+}
 
   .titolo {
     margin-left: auto;

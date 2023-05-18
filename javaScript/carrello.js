@@ -23,7 +23,7 @@ function serializza() {
        cart = cart + " {codice : " + carrello[i].codice;
        cart = cart + ", taglia: '" + carrello[i].taglia + "'";
        cart = cart + ", descr: '" + carrello[i].descr + "'"; 
-       cart = cart + ", prezzo : " + carrello[i].prezzo + "€";
+       cart = cart + ", prezzo : " + carrello[i].prezzo;
        cart = cart + ", qnt : " + carrello[i].qnt + "}";
        comma = ',';
    } 

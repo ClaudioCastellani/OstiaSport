@@ -1,18 +1,20 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr; 
-    height: 100px;
-    gap: 0px 0px;
-    grid-auto-flow: column;
-    position: sticky;
-    background-color: #03abb7;
-   top: 0px;
-    grid-template-areas:
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100px;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  position: sticky;
+  background-color: #03abb7;
+  top: 0px;
+  grid-template-areas:
       "Logo NavBar NavBar NavBar NavBar NavBar"
       ". . . . . ."
       ". . . . . .";
-      z-index: 5;
-  }
+  z-index: 5;
+  width: 100%;
+}
   
   .Logo {
     grid-area: Logo;
@@ -118,8 +120,20 @@
     margin-top: 80px;
 }
 
-.articoli{
+.articoli {
   object-fit: cover;
+  width: 170px;
+}
+
+figure{
+  margin: 0;
+  height: 200px;
+}
+
+figcaption{
+  text-align: center;
+  font-style: italic;
+  color: #6303b7;
 }
 
 footer {

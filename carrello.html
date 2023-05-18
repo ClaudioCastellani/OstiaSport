@@ -1,0 +1,27 @@
+<HTML>
+    <HEAD>
+       <LINK REL="stylesheet" TYPE="text/css" href="CSS/carrello.css"> 
+               
+       <script language=javascript src="javaScript/carrello.js"></script>
+    </HEAD>
+    
+    <BODY>
+       <h2>Il tuo Carrello della spesa</h2>
+    
+        <script language=javascript>
+                
+            carrello = eval(localStorage.carrello);
+           
+            document.write("<div id=elenco>");
+            tabella(); 
+            document.write("</div>");
+            totali();
+            
+         </script>
+         
+        </div>
+    
+       <hr>
+       <a href=index.html>Torna allo shopping</a> <a href=javascript:svuota()>Svuota il carrello</a>
+    </BODY>
+    </HTML>

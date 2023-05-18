@@ -1,0 +1,43 @@
+H2 {
+    color: red;
+}
+
+.prodotto {
+    width: 250px;
+    height: 200px;
+    background: silver;
+    float: left;
+    padding: 20;
+    margin: 10px;
+}
+
+table {
+    border: 1 solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background: cyan;
+}
+
+td {
+    padding: 5px;
+}
+
+#totale {
+    background: #FaF;
+}
+
+img {
+    float: left;
+    padding: 10px;
+    height: 100px;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}

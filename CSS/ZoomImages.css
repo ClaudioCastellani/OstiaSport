@@ -1,0 +1,29 @@
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Larghezza desiderata del contenitore dello zoom */
+    height: 200px; /* Altezza desiderata del contenitore dello zoom */
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s; /* Aggiunge una transizione fluida allo zoom */
+  }
+  
+  .zoom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Colore di sfondo dell'overlay */
+    display: none;
+  }
+  
+  .zoom-container:hover .zoom-overlay {
+    display: block; /* Mostra l'overlay al passaggio del mouse sul contenitore */
+  }
+  
+  .zoom-container:hover .zoom-image {
+    transform: scale(2); /* Scala l'immagine al doppio delle dimensioni originali al passaggio del mouse */
+  }
+  

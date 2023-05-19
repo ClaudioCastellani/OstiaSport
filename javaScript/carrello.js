@@ -1,8 +1,7 @@
 var carrello = new Array();    /* carrello con gli acquisti. Vettore di oggetti contenenti codice, prezzo, quantita
                                            di ciascun prodotto */
 
-
-
+var selezione;
 
 function inizializza() {
 /* se esiste un carrello aggiorna la variabile con il contenuto di localStorage */
@@ -54,15 +53,15 @@ function size(){
     });
 }
 
-function aggiungi(cod, taglia, descrizione, prezzo) {
+function aggiungi(descrizione, prezzo) {
 /* aggiunge un prodotto al carrello */
 size();
    var ogg = {};
    var n = carrello.length;
    var x = cerca(cod);
    if (x == 'N') {     
-       ogg.codice  = cod;
-       ogg.taglia  = taglia;
+       ogg.codice  = cambioCodice();
+       ogg.taglia  = selezionaTaglia();
        ogg.descr   = descrizione;
        ogg.prezzo  = prezzo;
        ogg.qnt     = 1;
@@ -120,3 +119,28 @@ size();
             document.getElementById('elenco').innerHTML =
                                  "<TABLE border=1><TH>Codice<TH>prezzo<TH>Quantita<TH>Totale</TABLE>";            
       }
+
+
+
+      function selezionaTaglia(){
+       
+            var selectElement = document.getElementById("tagliaSelect");
+            selezione = selectElement.options[selectElement.selectedIndex].text;
+            console.log(selezione);
+            return selezione;
+            // Puoi utilizzare la variabile 'selezione' come desideri
+        }
+
+        function cambioCodice(){
+            switch(selezione){
+                case 'XS':
+                    cod = 1;
+                    console.log(cod);
+                    break;
+                case 'S':
+                    cod = 2;
+                    break;
+            }
+            return cod;
+
+        }

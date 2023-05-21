@@ -7,7 +7,8 @@
   <link href="CSS/RadioTaglie.css" rel="stylesheet" />
   <link href="CSS/ZoomImages.css" rel="stylesheet" />
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
 
   <LINK REL="stylesheet" TYPE="text/css" HREF="/CSS/carrello.css"> 
@@ -37,7 +38,15 @@
         <li>|</li>
         <li><a href="login.html">LOGIN</a></li>
         <li>|</li>
-        <li><a href="carrello.html">CARRELLO</a></li>
+        <li><a href="carrello.html">
+
+                  
+          <img src="img/carrello.png" alt="Carrello" class="carrello">
+          <span id="cart-count">0</span>
+        
+        
+
+      </a></li>
       </ul>
     </nav>
   </div>
@@ -69,17 +78,17 @@
 
 
 
-  <figure class=prodotto>
+  <figure class="prodotto">
     <div class="zoom-container">
       <img src=mini-pallone-football.jpg class="zoom-image">
       <div class="zoom-overlay"></div>
     </div>
     <figcaption>scarpe bellissime fatte</figcaption>
-      <figcaption>benissimo prezzo : 2,00 €</figcaption>
+    <figcaption>benissimo prezzo : 2,00 €</figcaption>
     <!-- <br> cod. 1 <p> 25 Euro <br clear=all>
-      Mini pallone da football -->
+        Mini pallone da football -->
     <div class="custom-select" style="width:200px;">
-      <select id="tagliaSelect">
+      <select class="tagliaSelect">
         <option value="0">Scegli una taglia:</option>
         <option value="1">XS</option>
         <option value="2">S</option>
@@ -88,63 +97,83 @@
         <option value="5">XL</option>
       </select>
     </div>
-    <a href="javascript:aggiungi(1,'Mini pallone football', 25)">Aggiungi al carrello</a>
+    <a href="javascript:aggiungi(1,'Prodotto 1', 25)">Aggiungi al carrello</a>
   
   </figure>
-
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <figure>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <figure class="prodotto">
     <div class="zoom-container">
-  <img src="/img/m-b-2.jpg" alt="Immagine2" class="zoom-image">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>scarpe bellissime fatte</figcaption>
-  <figcaption>benissimo prezzo : 2,00 €</figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select>
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">XS</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure>
-  <div class="zoom-container">
-<img src="/img/m-b-3.jpg" alt="Immagine" class="zoom-image">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>scarpe bellissime fatte</figcaption>
-<figcaption>benissimo prezzo : 2,00 €</figcaption>
-<div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">XS</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
+      <img src="/img/m-b-2.jpg" alt="Immagine2" class="zoom-image">
+      <div class="zoom-overlay"></div>
+    </div>
+    <figcaption>scarpe bellissime fatte</figcaption>
+    <figcaption>benissimo prezzo : 2,00 €</figcaption>
+    <div class="custom-select" style="width:200px;">
+      <select class="tagliaSelect">
+        <option value="0">Scegli una taglia:</option>
+        <option value="1">XS</option>
+        <option value="2">S</option>
+        <option value="3">M</option>
+        <option value="4">L</option>
+        <option value="5">XL</option>
+      </select>
+    </div>
+    <a href="javascript:aggiungi(2,'Prodotto 2', 40)">Aggiungi al carrello</a>
+  
+  </figure>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <figure class="prodotto">
+    <div class="zoom-container">
+      <img src="/img/m-b-3.jpg" alt="Immagine" class="zoom-image">
+      <div class="zoom-overlay"></div>
+    </div>
+    <figcaption>scarpe bellissime fatte</figcaption>
+    <figcaption>benissimo prezzo : 2,00 €</figcaption>
+    <div class="custom-select" style="width:200px;">
+      <select class="tagliaSelect">
+        <option value="0">Scegli una taglia:</option>
+        <option value="1">XS</option>
+        <option value="2">S</option>
+        <option value="3">M</option>
+        <option value="4">L</option>
+        <option value="5">XL</option>
+      </select>
+    </div>
+    <a href="javascript:aggiungi(3,'Prodotto 3', 72.99)">Aggiungi al carrello</a>
+  
+  </figure>
+  
+  
+  
+  
   </div>
   <br><br><br><br>
   <div class="hot">
@@ -480,6 +509,7 @@
   </footer>
   <script src="javaScript/ZoomImages.js"></script>
   <script src="javaScript/RadioTaglie.js"></script>
+  <script>updateCartCount()</script>
 </body>
 
 </html>

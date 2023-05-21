@@ -37,6 +37,27 @@
     margin-right: 20px;
  }
   
+
+ .carrello {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  top: -8px;
+  position: relative;
+}
+
+#cart-count {
+  position: relative;
+  top: -20px;
+  right: -5px;
+  background-color: #6303b7;
+  color: #03abb7;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+
   body{
     margin: 0px;
     font-family: 'Oswald', sans-serif;

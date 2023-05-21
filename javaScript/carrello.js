@@ -42,35 +42,65 @@ function cerca(cod) {
    return("N");
 }
 
-function size(){
-    const tagliaSelect = document.getElementById('tagliaSelect');
-    tagliaSelect.addEventListener('change', function(){
-        const selectedTaglia = this.value;
-        console.log(selectedTaglia);
-        return selectedTaglia;
-        
-        // tuaFunzione(selectedTaglia);
-    });
+function size() {
+    const tagliaSelect = document.getElementsByClassName('tagliaSelect');
+    for (let i = 0; i < tagliaSelect.length; i++) {
+        tagliaSelect[i].addEventListener('change', function () {
+            const selectedTaglia = this.value;
+            console.log(selectedTaglia);
+            return selectedTaglia;
+
+            // tuaFunzione(selectedTaglia);
+        });
+    }
 }
 
-function aggiungi(descrizione, prezzo) {
+function cambiaCodice(cod) {
+    var ciao = selezionaTaglia();
+    switch (ciao) {
+        case 'XS':
+            cod = cod + "10000";
+            break;
+        case 'S':
+            cod = cod + "01000";
+            break;
+        case 'M':
+            cod = cod + "00100";
+            break;
+        case 'L':
+            cod = cod + "00010";
+            break;
+        case 'XL':
+            cod = cod + "00001";
+            break;
+    }
+    return cod;
+}
+
+
+function aggiungi(cod, descrizione, prezzo) {
 /* aggiunge un prodotto al carrello */
+
 size();
+
    var ogg = {};
    var n = carrello.length;
    var x = cerca(cod);
    if (x == 'N') {     
-       ogg.codice  = cambioCodice();
+       ogg.codice  = cambiaCodice(cod);
        ogg.taglia  = selezionaTaglia();
        ogg.descr   = descrizione;
        ogg.prezzo  = prezzo;
        ogg.qnt     = 1;
        carrello[n] = ogg;
+       
    } else { 
        carrello[x].qnt++;
    }
+   updateCartCount();
    serializza();
-   alert("prodotto aggiunto al carrello"); 
+   
+   //alert("prodotto aggiunto al carrello"); 
 }
         
          
@@ -120,27 +150,58 @@ size();
                                  "<TABLE border=1><TH>Codice<TH>prezzo<TH>Quantita<TH>Totale</TABLE>";            
       }
 
+      var selezione;
+var num;
 
-
-      function selezionaTaglia(){
-       
-            var selectElement = document.getElementById("tagliaSelect");
-            selezione = selectElement.options[selectElement.selectedIndex].text;
-            console.log(selezione);
-            return selezione;
-            // Puoi utilizzare la variabile 'selezione' come desideri
-        }
-
-        function cambioCodice(){
-            switch(selezione){
-                case 'XS':
-                    cod = 1;
-                    console.log(cod);
-                    break;
-                case 'S':
-                    cod = 2;
-                    break;
+      function selezionaTaglia() {
+        var selectElements = document.getElementsByClassName("tagliaSelect");
+        //  selezione=selectElements[1].options[selectElements[1].selectedIndex].text;
+        
+        for (let i = 0; i < selectElements.length; i++) {
+            if(selectElements[i].options[selectElements[i].selectedIndex].text !== "Scegli una taglia:"){
+                num = i;
+                selezione = selectElements[num].options[selectElements[num].selectedIndex].text;
+                
+                break;
             }
-            return cod;
-
+        //   selectElements[i].addEventListener('change', function() {
+        //     var selezionato = selectElements[i].options[selectElements[i].selectedIndex].text;
+        //     selezione = selezionato;
+        //     console.log(selezione);
+        //     return selezione;
+        //     // Puoi utilizzare la variabile 'selezione' come desideri
+        //   });
+          
         }
+        resetSelect(num);
+        //resetSelect(num);
+        return selezione;
+        // Rimuovi il codice seguente dal ciclo for
+
+
+      }
+
+
+      function resetSelect(num) {
+        var selects = document.getElementsByClassName('tagliaSelect');
+        selects[num].selectedIndex = 0;
+    }
+
+
+      
+
+        
+
+
+
+// Assume che tu abbia un array di oggetti nel carrello chiamato "cartItems"
+
+
+// Funzione per aggiornare il conteggio del carrello
+function updateCartCount() {
+    const cartCountElement = document.getElementById("cart-count");
+    cartCountElement.innerText = carrello.length.toString();
+}
+
+// Esegui la funzione per impostare il conteggio iniziale all'avvio
+updateCartCount();

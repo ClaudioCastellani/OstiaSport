@@ -10,6 +10,7 @@
   </head>
   <body>
     <script>inizializza()</script>
+
     <div class="container">
         <div class="Logo">
             <img src="img/logo.png" width="90px" align-items="center" alt="Logo" class="logo">
@@ -28,7 +29,16 @@
                 <li>|</li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li>|</li>
-                <li><a href="carrello.html">CARRELLO</a></li>
+                <!--<li><a href="carrello.html"><img src="img/carrello.png" class="carrello"></a></li>-->
+                <li><a href="carrello.html">
+
+                  
+                    <img src="img/carrello.png" alt="Carrello" class="carrello">
+                    <span id="cart-count">0</span>
+                  
+                  
+
+                </a></li>
             </ul>
         </nav>
     </div>
@@ -119,7 +129,7 @@
 
 
 
-
+        <script>updateCartCount()</script>
         <script src="Javascript/script.js"></script>
   </body>
 </html>

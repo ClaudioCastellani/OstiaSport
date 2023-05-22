@@ -1,0 +1,43 @@
+m_d_1 - adidas - 3STRIPES - 35,00€
+m_d_2 - converse - GO-TO STAR CHEVRON LOGO FLAMINGO - 20,00€
+m_d_3 - puma - LOGO - 35,00€
+m_d_4 - the north face - FOUNDATION - 40,00€
+m_d_5 - adidas - ORIGINAL CROP 3STRIPES - 23,00€
+m_d_6 - puma - YOGA - 40,00€
+
+p_d_1 - puma - RUN KEY - 52,00€
+p_d_2 - puma - BIG LOGO COLOR - 37,00€
+p_d_3 - adidas - ALL OVER - 65,00€
+p_d_4 - rock experience - ARP - 60,00€
+p_d_5 - adidas - MONOGRAM - 65,00€ 
+p_d_6 - freddy - POLY 7/8 ENERGY - 34,00€
+
+s_d_1 - puma - FUTURE RIDER PLAY ON - 95,00€
+s_d_2 - nike - AIR MAX 720 - 159,00€
+s_d_3 - puma - CRUISE RIDER NU POP - 100,00€
+s_d_4 - converse - CHUCK TAYLOR ALL STAR MOVE PLATFORM - 90,00€ 
+s_d_5 - new balance - FRESH FOAM MORE V3 - 136,00€
+s_d_6 - nike - AIR ZOOM PEGASUS 39 SHIELD - 94,00€
+
+
+
+m_b_1 - the north face - REDBOX - 30,00€
+m_b_2 - timberland - GRAPHIC - 35,00€
+m_b_3 - nike - JORDAN - 30,00€
+m_b_4 - nike - FC BIG - 29,00€
+m_b_5 - freddy - TASKINO - 39,00€
+m_b_6 - admiral _ LIFESTYLE - 12,00€
+
+p_b_1 - the north face - EXPLORATION - 60,00€
+p_b_2 - timberland - CARGO - 69,00€
+p_b_3 - nike - JORDAN - 45,00€
+p_b_4 - freddy - POP HIP HOP - 44,00€
+p_b_5 - ellesse - CLASSIC PATCH - 17,00€
+p_b_6 - puma - BASIC - 18,00€
+
+s_b_1 - nike - ZOOMX INVINCIBLE RUN FK 3 - 169,00€
+s_b_2 - puma - REBOUND LAYUP L GS - 55,00€
+s_b_3 - vans - SK8-HI VANS SINCE 1966 PS - 60,00€
+s_b_4 - nike - PHANTOM GX CLUB TF GS  - 50,00€
+s_b_5 - converse - CHUCK TAYLOR STAR EVA LIFT PLAT GS - 65,00€
+s_b_6 - mistral - ROTTERDAM MID - 34,00€

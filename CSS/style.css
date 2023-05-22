@@ -144,6 +144,7 @@
 .articoli {
   object-fit: cover;
   width: 170px;
+  height: 200px;
 }
 
 figure{

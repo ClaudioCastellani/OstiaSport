@@ -72,7 +72,6 @@ figure{
 
 figcaption{
     text-align: center;
-    font-style: italic;
     color: #6303b7;
 }
 
@@ -84,7 +83,7 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    height: 200px;
+    height: 300px;
   }
 
   .hot > div {

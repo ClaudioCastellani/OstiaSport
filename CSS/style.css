@@ -108,6 +108,10 @@
     transition: transform 1s ease-in-out;
   }
   
+  .carousel-inner > img{
+    padding: 0px;
+  }
+
   .carousel-image {
     width: 33.33%;
     height: 100%;

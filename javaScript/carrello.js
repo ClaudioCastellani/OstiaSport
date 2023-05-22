@@ -96,6 +96,7 @@ size();
        
    } else { 
        carrello[x].qnt++;
+       
    }
    updateCartCount();
    serializza();
@@ -195,12 +196,20 @@ var num;
 
 
 // Assume che tu abbia un array di oggetti nel carrello chiamato "cartItems"
-
-
+var quantita=0;
+var sommaQuantita=0;
 // Funzione per aggiornare il conteggio del carrello
 function updateCartCount() {
     const cartCountElement = document.getElementById("cart-count");
-    cartCountElement.innerText = carrello.length.toString();
+    for(let i=0; i<carrello.length; i++){
+        quantita = parseInt(carrello[i].qnt);
+        sommaQuantita += quantita;
+        
+    }
+    console.log(carrello.length);
+    cartCountElement.innerText = sommaQuantita;
+    quantita=0;
+    sommaQuantita=0;
 }
 
 // Esegui la funzione per impostare il conteggio iniziale all'avvio

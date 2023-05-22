@@ -35,7 +35,7 @@ function cerca(cod) {
 /* restituisce la posizione di un prodotto gia presente in carrello
    Se non esiste: 'N' */
    for (var i=0;i<carrello.length;i++) {
-        if (carrello[i].codice == cod) {
+        if (carrello[i].codice == cambiaCodice(cod)) {
             return(i);
         }
    }

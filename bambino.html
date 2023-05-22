@@ -1,450 +1,460 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <link href="CSS/bambino.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="CSS/RadioTaglie.css" rel="stylesheet" />
+<head>
+
+  <link href="CSS/bambino.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="CSS/RadioTaglie.css" rel="stylesheet" />
   <link href="CSS/ZoomImages.css" rel="stylesheet" />
-  <script  src="javaScript/carrello.js"> </script>
+  <script src="javaScript/carrello.js"> </script>
 
-    <title>Abbigliamento Bambino</title>
+  <title>Abbigliamento Bambino</title>
 
-  </head>
-  <body>
-    <div class="container">
-        <div class="Logo">
-            <img src="img//logo.png" width="90px" align-items="center" alt="Logo" class="logo">
-        </div>
-        <nav class="NavBar">
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li>|</li>
-                <li><a href="donna.html">DONNA</a></li>
-                <li>|</li>
-                <li><a href="uomo.html">UOMO</a></li>
-                <li>|</li>
-                <li><a href="bambino.html">BAMBINO</a></li>
-                <li>|</li>
-                <li><a href="ChiSiamo.html">CONTATTACI</a></li>
-                <li>|</li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="carrello.html">
+</head>
 
-                  
-                  <img src="img/carrello.png" alt="Carrello" class="carrello">
-                  <span id="cart-count">0</span>
-                
-                
-        
-              </a></li>
-            </ul>
-        </nav>
+<body>
+  <script>inizializza()</script>
+
+  <div class="container">
+    <div class="Logo">
+      <img src="img//logo.png" width="90px" align-items="center" alt="Logo" class="logo">
     </div>
+    <nav class="NavBar">
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li>|</li>
+        <li><a href="donna.html">DONNA</a></li>
+        <li>|</li>
+        <li><a href="uomo.html">UOMO</a></li>
+        <li>|</li>
+        <li><a href="bambino.html">BAMBINO</a></li>
+        <li>|</li>
+        <li><a href="ChiSiamo.html">CONTATTACI</a></li>
+        <li>|</li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="carrello.html">
 
-<!--IMG-->
 
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/m_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>The North Face - REDBOX</figcaption>
-  <figcaption>prezzo : 30,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(37,'REDBOX', 30)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">XS</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/m_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Timberland - GRAPHIC</figcaption>
-<figcaption>prezzo : 35,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(38,'GRAPHIC', 35)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">XS</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/m_b_3.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Nike - JORDAN</figcaption>
-<figcaption>prezzo : 30,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(39,'JORDAN', 30)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">XS</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/m_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Nike - FC BIG</figcaption>
-  <figcaption>prezzo : 29,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(40,'FC BIG', 29)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">XS</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/m_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Freddy - TASKINO</figcaption>
-<figcaption>prezzo : 39,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(41,'TASKINO', 39)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">XS</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/m_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Admiral - LIFESTYLE</figcaption>
-<figcaption>prezzo : 12,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(42,'LIFESTYLE', 12)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">XS</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/p_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>The North Face - EXPLORATION</figcaption>
-  <figcaption>prezzo : 60,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(43,'EXPLORATION', 60)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">XS</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/p_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Timberland - CARGO</figcaption>
-<figcaption>prezzo : 69,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(44,'CARGO', 69)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">XS</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/p_b_3.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Nike - JORDAN</figcaption>
-<figcaption>prezzo : 45,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(45,'JORDAN', 45)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">XS</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
+            <img src="img/carrello.png" alt="Carrello" class="carrello">
+            <span id="cart-count">0</span>
 
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/p_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Freddy - POP HIP HOP</figcaption>
-  <figcaption>prezzo : 44,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(46,'POP HIP HOP', 44)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">XS</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/p_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Ellesse - CLASSIC PATCH</figcaption>
-<figcaption>prezzo : 17,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(47,'CLASSIC PATCH', 17)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">XS</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/p_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - BASIC</figcaption>
-<figcaption>prezzo : 18,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(48,'BASIC', 18)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">XS</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/s_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Nike - ZOOMX INVINCIBLE RUN</figcaption>
-  <figcaption>prezzo : 169,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(49,'ZOOMX INVINCIBLE RUN', 169)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">32</option>
-      <option value="2">33</option>
-      <option value="3">34</option>
-      <option value="4">35</option>
-      <option value="5">36</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/s_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - REBOUND LAYUP L GS</figcaption>
-<figcaption>prezzo : 55,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(50,'REBOUND LAYUP L GS', 55)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">32</option>
-    <option value="2">33</option>
-    <option value="3">34</option>
-    <option value="4">35</option>
-    <option value="5">36</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/s_b_3.jpg"alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Vans - SK8-HI VANS PS</figcaption>
-<figcaption>prezzo : 60,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(51,'SK8-HI VANS PS', 60)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">32</option>
-  <option value="2">33</option>
-  <option value="3">34</option>
-  <option value="4">35</option>
-  <option value="5">36</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/s_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Nike - PHANTOM GX CLUB TF GS</figcaption>
-  <figcaption>prezzo : 50,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(52,'PHANTOM GX CLUB TF GS', 50)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">32</option>
-      <option value="2">33</option>
-      <option value="3">34</option>
-      <option value="4">35</option>
-      <option value="5">36</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/s_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Converse - CHUCK TAYLOR GS</figcaption>
-<figcaption>prezzo : 65,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(53,'CHUCK TAYLOR GS', 65)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">32</option>
-    <option value="2">33</option>
-    <option value="3">34</option>
-    <option value="4">35</option>
-    <option value="5">36</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/s_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Mistral - ROTTERDAM MID</figcaption>
-<figcaption>prezzo : 34,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(54,'ROTTERDAM MID', 34)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">32</option>
-  <option value="2">33</option>
-  <option value="3">34</option>
-  <option value="4">35</option>
-  <option value="5">36</option>
-</select>
-</div>
-</figure>
-</div>
 
-<!--FOOTER-->
 
-            <footer>
-              <div class="footer-container">
-                <div class="footer-logo">
-                  <img src="img/logo.png" alt="Ostia Sport Logo">
-                  <h1>Ostia Sport</h1>
-                </div>
-                <div class="footer-links">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="donna.html">Donna</a></li>
-                    <li><a href="uomo.html">Uomo</a></li>
-                    <li><a href="bambino.html">Bambino</a></li>
-                    <li><a href="ChiSiamo.html">Contattaci</a></li>
-                  </ul>
-    
-                  <div>
-                    <p>Email: ostiasportsupport@gmail.com</p>
-                    <p>P.IVA: 53968103395</p>
-                    <p></p>
-                  </div>
-    
-                </div>
-                <div class="footer-social">
-                  <h4>Seguici su:</h4>
-                  <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <p>&copy; 2023 Ostia Sport. Tutti i diritti riservati.</p>
-              </div>
-            </footer>
-            <script>updateCartCount()</script>
-            <script src="javaScript/ZoomImages.js"></script>
-            <script src="javaScript/RadioTaglie.js"></script>
-  </body>
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--IMG-->
+
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>The North Face - REDBOX</figcaption>
+      <figcaption>prezzo : 30,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(37,'REDBOX', 30)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Timberland - GRAPHIC</figcaption>
+      <figcaption>prezzo : 35,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(38,'GRAPHIC', 35)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - JORDAN</figcaption>
+      <figcaption>prezzo : 30,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(39,'JORDAN', 30)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - FC BIG</figcaption>
+      <figcaption>prezzo : 29,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(40,'FC BIG', 29)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Freddy - TASKINO</figcaption>
+      <figcaption>prezzo : 39,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(41,'TASKINO', 39)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Admiral - LIFESTYLE</figcaption>
+      <figcaption>prezzo : 12,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(42,'LIFESTYLE', 12)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>The North Face - EXPLORATION</figcaption>
+      <figcaption>prezzo : 60,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(43,'EXPLORATION', 60)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Timberland - CARGO</figcaption>
+      <figcaption>prezzo : 69,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(44,'CARGO', 69)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - JORDAN</figcaption>
+      <figcaption>prezzo : 45,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(45,'JORDAN', 45)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Freddy - POP HIP HOP</figcaption>
+      <figcaption>prezzo : 44,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(46,'POP HIP HOP', 44)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Ellesse - CLASSIC PATCH</figcaption>
+      <figcaption>prezzo : 17,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(47,'CLASSIC PATCH', 17)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - BASIC</figcaption>
+      <figcaption>prezzo : 18,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(48,'BASIC', 18)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - ZOOMX INVINCIBLE RUN</figcaption>
+      <figcaption>prezzo : 169,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(49,'ZOOMX INVINCIBLE RUN', 169)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - REBOUND LAYUP L GS</figcaption>
+      <figcaption>prezzo : 55,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(50,'REBOUND LAYUP L GS', 55)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Vans - SK8-HI VANS PS</figcaption>
+      <figcaption>prezzo : 60,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(51,'SK8-HI VANS PS', 60)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - PHANTOM GX CLUB TF GS</figcaption>
+      <figcaption>prezzo : 50,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(52,'PHANTOM GX CLUB TF GS', 50)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Converse - CHUCK TAYLOR GS</figcaption>
+      <figcaption>prezzo : 65,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(53,'CHUCK TAYLOR GS', 65)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_b_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Mistral - ROTTERDAM MID</figcaption>
+      <figcaption>prezzo : 34,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(54,'ROTTERDAM MID', 34)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">32</option>
+          <option value="2">33</option>
+          <option value="3">34</option>
+          <option value="4">35</option>
+          <option value="5">36</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Ostia Sport Logo">
+        <h1>Ostia Sport</h1>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="donna.html">DONNA</a></li>
+          <li><a href="uomo.html">UOMO</a></li>
+          <li><a href="bambino.html">BAMBINO</a></li>
+          <li><a href="ChiSiamo.html">CONTATTACI</a></li>
+        </ul>
+
+        <div>
+          mails:‎ <a id="emailMe" href="mailto:OstiaSportSupport@gmail.com?subject=This%20is%20a%20subject"
+            class="myButton" target="_blank">OstiaSportSupport</a>
+          <p>P.IVA: 53968103395</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Seguici su:</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"></i></a>
+          </li>
+          <li><a href="#"><i class="fab fa-twitter"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"></i></a>
+          </li>
+          <li><a href="#"><i class="fab fa-instagram"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Ostia Sport. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  <script>updateCartCount()</script>
+  <script src="javaScript/ZoomImages.js"></script>
+  <script src="javaScript/RadioTaglie.js"></script>
+</body>
+
 </html>

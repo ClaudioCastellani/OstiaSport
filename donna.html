@@ -1,450 +1,462 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <link href="CSS/bambino.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="CSS/RadioTaglie.css" rel="stylesheet" />
+<head>
+
+  <link href="CSS/donna.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="CSS/RadioTaglie.css" rel="stylesheet" />
   <link href="CSS/ZoomImages.css" rel="stylesheet" />
-  <script  src="javaScript/carrello.js"> </script>
+  <script src="javaScript/carrello.js"> </script>
 
-    <title>Abbigliamento Donna</title>
+  <title>Abbigliamento Donna</title>
 
-  </head>
-  <body>
-    <div class="container">
-        <div class="Logo">
-            <img src="img//logo.png" width="90px" align-items="center" alt="Logo" class="logo">
-        </div>
-        <nav class="NavBar">
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li>|</li>
-                <li><a href="donna.html">DONNA</a></li>
-                <li>|</li>
-                <li><a href="uomo.html">UOMO</a></li>
-                <li>|</li>
-                <li><a href="bambino.html">BAMBINO</a></li>
-                <li>|</li>
-                <li><a href="ChiSiamo.html">CONTATTACI</a></li>
-                <li>|</li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="carrello.html">
+</head>
 
-                  
-                  <img src="img/carrello.png" alt="Carrello" class="carrello">
-                  <span id="cart-count">0</span>
-                
-                
-        
-              </a></li>
-            </ul>
-        </nav>
+<body>
+  <script>inizializza()</script>
+
+  <div class="container">
+    <div class="Logo">
+      <img src="img//logo.png" width="90px" align-items="center" alt="Logo" class="logo">
     </div>
+    <nav class="NavBar">
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li>|</li>
+        <li><a href="donna.html">DONNA</a></li>
+        <li>|</li>
+        <li><a href="uomo.html">UOMO</a></li>
+        <li>|</li>
+        <li><a href="bambino.html">BAMBINO</a></li>
+        <li>|</li>
+        <li><a href="ChiSiamo.html">CONTATTACI</a></li>
+        <li>|</li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="carrello.html">
 
-<!--IMG-->
 
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/m_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Adidas - 3STRIPES</figcaption>
-  <figcaption>prezzo : 35,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(20,'3STRIPES', 35)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1"36</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/m_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Converse - GO-TO STAR</figcaption>
-<figcaption>prezzo : 20,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(21,'GO-TO STAR', 20)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1"36</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/m_d_3.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - LOGO</figcaption>
-<figcaption>prezzo : 35,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(22,'LOGO', 35)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1"36</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/m_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>The North Face - FOUNDATION</figcaption>
-  <figcaption>prezzo : 40,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(23,'FOUNDATION', 40)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1"36</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/m_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Adidas - ORIGINAL CROP</figcaption>
-<figcaption>prezzo : 23,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(26,'ORIGINAL CROP', 23)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1"36</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/m_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - YOGA</figcaption>
-<figcaption>prezzo : 40,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(27,'YOGA', 40)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1"36</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/p_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Puma - RUN KEY</figcaption>
-  <figcaption>prezzo : 52,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(28,'RUN KEY', 52)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1"36</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/p_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - BIG LOGO COLOR</figcaption>
-<figcaption>prezzo : 37,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(29,'BIG LOGO COLOR', 37)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1"36</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/p_d_3.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Adidas - ALL OVER</figcaption>
-<figcaption>prezzo : 65,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(30,'ALL OVER', 65)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1"36</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
+            <img src="img/carrello.png" alt="Carrello" class="carrello">
+            <span id="cart-count">0</span>
 
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/p_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Rock Experience - ARP</figcaption>
-  <figcaption>prezzo : 60,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(31,'ARP', 60)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1"36</option>
-      <option value="2">S</option>
-      <option value="3">M</option>
-      <option value="4">L</option>
-      <option value="5">XL</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/p_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Adidas - MONOGRAM</figcaption>
-<figcaption>prezzo : 65,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(32,'MONOGRAM', 65)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1"36</option>
-    <option value="2">S</option>
-    <option value="3">M</option>
-    <option value="4">L</option>
-    <option value="5">XL</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/p_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Freddy - POLY 7/8 ENERGY</figcaption>
-<figcaption>prezzo : 34,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(32,'POLY 7/8 ENERGY', 34)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1"36</option>
-  <option value="2">S</option>
-  <option value="3">M</option>
-  <option value="4">L</option>
-  <option value="5">XL</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/s_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Puma - FUTURE RIDER PLAY ON</figcaption>
-  <figcaption>prezzo : 95,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(33,'FUTURE RIDER PLAY ON', 95)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">36</option>
-      <option value="2">37</option>
-      <option value="3">38</option>
-      <option value="4">39</option>
-      <option value="5">40</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/s_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Nike - AIR MAX 720</figcaption>
-<figcaption>prezzo : 159,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(34,'AIR MAX 720', 159)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">36</option>
-    <option value="2">37</option>
-    <option value="3">38</option>
-    <option value="4">39</option>
-    <option value="5">40</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/s_d_3.jpg"alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Puma - CRUISE RIDER NU POP</figcaption>
-<figcaption>prezzo : 100,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(35,'CRUISE RIDER NU POP', 100)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">36</option>
-  <option value="2">37</option>
-  <option value="3">38</option>
-  <option value="4">39</option>
-  <option value="5">40</option>
-</select>
-</div>
-</figure>
-</div>
-<br><br>
-<div class="hot">
-  <figure class="prodotto">
-    <div class="zoom-container">
-  <img src="/img/s_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
-  <div class="zoom-overlay"></div>
-</div>
-  <figcaption>Converse - CHUCK TAYLOR</figcaption>
-  <figcaption>prezzo : 90,00€</figcaption>
-  <figcaption><a href="javascript:aggiungi(36,'CHUCK TAYLOR', 90)" >Aggiungi al carrello</a></figcaption>
-  <div class="custom-select" style="width:200px;">
-    <select class="tagliaSelect">
-      <option value="0">Scegli una taglia:</option>
-      <option value="1">36</option>
-      <option value="2">37</option>
-      <option value="3">38</option>
-      <option value="4">39</option>
-      <option value="5">40</option>
-    </select>
-  </div>
-</figure>
-<figure class="prodotto">
-  <div class="zoom-container">
-<img src="/img/s_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>New Balance - FRESH FOAM</figcaption>
-<figcaption>prezzo : 136,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(37,'FRESH FOAM MORE V3', 136)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-  <select class="tagliaSelect">
-    <option value="0">Scegli una taglia:</option>
-    <option value="1">36</option>
-    <option value="2">37</option>
-    <option value="3">38</option>
-    <option value="4">39</option>
-    <option value="5">40</option>
-  </select>
-</div>
-</figure>
-<figure class="prodotto">
-<div class="zoom-container">
-<img src="/img/s_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
-<div class="zoom-overlay"></div>
-</div>
-<figcaption>Nike - AIR ZOOM PEGASUS</figcaption>
-<figcaption>prezzo : 94,00€</figcaption>
-<figcaption><a href="javascript:aggiungi(38,'AIR ZOOM PEGASUS', 94)" >Aggiungi al carrello</a></figcaption>
-<div class="custom-select" style="width:200px;">
-<select class="tagliaSelect">
-  <option value="0">Scegli una taglia:</option>
-  <option value="1">36</option>
-  <option value="2">37</option>
-  <option value="3">38</option>
-  <option value="4">39</option>
-  <option value="5">40</option>
-</select>
-</div>
-</figure>
-</div>
 
-<!--FOOTER-->
 
-            <footer>
-              <div class="footer-container">
-                <div class="footer-logo">
-                  <img src="img/logo.png" alt="Ostia Sport Logo">
-                  <h1>Ostia Sport</h1>
-                </div>
-                <div class="footer-links">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="donna.html">Donna</a></li>
-                    <li><a href="uomo.html">Uomo</a></li>
-                    <li><a href="bambino.html">Bambino</a></li>
-                    <li><a href="ChiSiamo.html">Contattaci</a></li>
-                  </ul>
-    
-                  <div>
-                    <p>Email: ostiasportsupport@gmail.com</p>
-                    <p>P.IVA: 53968103395</p>
-                    <p></p>
-                  </div>
-    
-                </div>
-                <div class="footer-social">
-                  <h4>Seguici su:</h4>
-                  <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <p>&copy; 2023 Ostia Sport. Tutti i diritti riservati.</p>
-              </div>
-            </footer>
-            <script>updateCartCount()</script>
-            <script src="javaScript/ZoomImages.js"></script>
-            <script src="javaScript/RadioTaglie.js"></script>
-  </body>
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--IMG-->
+
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Adidas - 3STRIPES</figcaption>
+      <figcaption>prezzo : 35,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(20,'3STRIPES', 35)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Converse - GO-TO STAR</figcaption>
+      <figcaption>prezzo : 20,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(21,'GO-TO STAR', 20)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - LOGO</figcaption>
+      <figcaption>prezzo : 35,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(22,'LOGO', 35)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>The North Face - FOUNDATION</figcaption>
+      <figcaption>prezzo : 40,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(23,'FOUNDATION', 40)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Adidas - ORIGINAL CROP</figcaption>
+      <figcaption>prezzo : 23,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(26,'ORIGINAL CROP', 23)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/m_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - YOGA</figcaption>
+      <figcaption>prezzo : 40,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(27,'YOGA', 40)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - RUN KEY</figcaption>
+      <figcaption>prezzo : 52,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(28,'RUN KEY', 52)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - BIG LOGO COLOR</figcaption>
+      <figcaption>prezzo : 37,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(29,'BIG LOGO COLOR', 37)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Adidas - ALL OVER</figcaption>
+      <figcaption>prezzo : 65,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(30,'ALL OVER', 65)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Rock Experience - ARP</figcaption>
+      <figcaption>prezzo : 60,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(31,'ARP', 60)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Adidas - MONOGRAM</figcaption>
+      <figcaption>prezzo : 65,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(32,'MONOGRAM', 65)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/p_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Freddy - POLY 7/8 ENERGY</figcaption>
+      <figcaption>prezzo : 34,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(32,'POLY 7/8 ENERGY', 34)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_1.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - FUTURE RIDER PLAY ON</figcaption>
+      <figcaption>prezzo : 95,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(33,'FUTURE RIDER PLAY ON', 95)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_2.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - AIR MAX 720</figcaption>
+      <figcaption>prezzo : 159,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(34,'AIR MAX 720', 159)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_3.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Puma - CRUISE RIDER NU POP</figcaption>
+      <figcaption>prezzo : 100,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(35,'CRUISE RIDER NU POP', 100)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+  <br><br>
+  <div class="hot">
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_4.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Converse - CHUCK TAYLOR</figcaption>
+      <figcaption>prezzo : 90,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(36,'CHUCK TAYLOR', 90)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_5.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>New Balance - FRESH FOAM</figcaption>
+      <figcaption>prezzo : 136,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(37,'FRESH FOAM MORE V3', 136)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+    <figure class="prodotto">
+      <div class="zoom-container">
+        <img src="/img/s_d_6.jpg" alt="Immagine" class="zoom-image" width="200">
+        <div class="zoom-overlay"></div>
+      </div>
+      <figcaption>Nike - AIR ZOOM PEGASUS</figcaption>
+      <figcaption>prezzo : 94,00€</figcaption>
+      <figcaption><a href="javascript:aggiungi(38,'AIR ZOOM PEGASUS', 94)">Aggiungi al carrello</a></figcaption>
+      <div class="custom-select" style="width:200px;">
+        <select class="tagliaSelect">
+          <option value="0">Scegli una taglia:</option>
+          <option value="1">36</option>
+          <option value="2">37</option>
+          <option value="3">38</option>
+          <option value="4">39</option>
+          <option value="5">40</option>
+        </select>
+      </div>
+    </figure>
+  </div>
+
+  <!--FOOTER-->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Ostia Sport Logo">
+        <h1>Ostia Sport</h1>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="donna.html">DONNA</a></li>
+          <li><a href="uomo.html">UOMO</a></li>
+          <li><a href="bambino.html">BAMBINO</a></li>
+          <li><a href="ChiSiamo.html">CONTATTACI</a></li>
+        </ul>
+
+        <div>
+          mails:‎ <a id="emailMe" href="mailto:OstiaSportSupport@gmail.com?subject=This%20is%20a%20subject"
+            class="myButton" target="_blank">OstiaSportSupport</a>
+          <p>P.IVA: 53968103395</p>
+          <p></p>
+        </div>
+
+      </div>
+      <div class="footer-social">
+        <h4>Seguici su:</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"></i></a>
+          </li>
+          <li><a href="#"><i class="fab fa-twitter"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"></i></a>
+          </li>
+          <li><a href="#"><i class="fab fa-instagram"><img
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Ostia Sport. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  <script>updateCartCount()</script>
+  <script src="javaScript/ZoomImages.js"></script>
+  <script src="javaScript/RadioTaglie.js"></script>
+</body>
+
 </html>

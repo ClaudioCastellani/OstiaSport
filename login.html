@@ -17,6 +17,13 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script>
+      function apriForm() {
+        window.open("form.html","_blank");
+      }
+    </script>
+
 </head>
 <body>
 
@@ -80,16 +87,14 @@
                 </div>
                 <!--buttons -->
                 <!--      button LogIn -->
-              <button class="log-in" type="submit" value="Login">
-                
-                Accedi </button>
+              <button class="log-in" type="submit" value="Login">Accedi</button>
              </div>
              <!--   other buttons -->
              <div class="other">
                  <!--      Forgot Password button-->
                  <button class="btn submits frgt-pass">Password dimenticata?</button>
                  <!--Sign Up button -->
-                 <button class="btn submits sign-up">Iscriviti 
+                 <button class="btn submits sign-up" onclick="apriForm()">Iscriviti 
                     <!--Sign Up font icon -->
                     <i class="fa fa-user-plus" aria-hidden="true"></i>
                 </button>

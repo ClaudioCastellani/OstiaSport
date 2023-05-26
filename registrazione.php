@@ -6,7 +6,7 @@ $servername3 = "localhost:5500";
 
 $username = "root";
 $password = "";
-$ports = [3306, 3307, 5500];
+$ports = [5500, 3307, 5500];
 foreach ($ports as $port) {
     $conn = @new mysqli($servername, $username, $password, '', $port);
 

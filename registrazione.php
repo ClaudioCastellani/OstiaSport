@@ -1,17 +1,13 @@
 <?php
 // Connessione al database (XAMPP)
-$servername = "localhost";
+$servername = "localhost:3306";
 $servername2 = "localhost:3307";
 $servername3 = "localhost:5500";
 
 $username = "root";
 $password = "";
-
 $ports = [5500, 3307, 3306];
-$portsCount = count($ports);
-
-for ($i = 0; $i < $portsCount; $i++) {
-    $port = $ports[$i];
+foreach ($ports as $port) {
     $conn = @new mysqli($servername, $username, $password, '', $port);
 
     if ($conn->connect_error) {
